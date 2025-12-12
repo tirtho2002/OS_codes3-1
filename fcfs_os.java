@@ -25,6 +25,6 @@ public class fcfs_os {
             System.out.println("Waiting time for P "+num);
             total +=num;
         }
-        System.out.println(total/(burst.length));
+        System.out.println("avarage waiting time "+ total/(burst.length));
     }
 }
