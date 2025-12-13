@@ -10,7 +10,7 @@ public class fcfs_os {
         int n=sc.nextInt();
         int burst[]=new int[n+1];
         burst[0]=0;
-        int total=0;
+
 
 
         for(int i=1;i<=n;i++){
@@ -21,10 +21,8 @@ public class fcfs_os {
 
        
         }
-        for(int num:burst){
-            System.out.println("Waiting time for P "+num);
-            total +=num;
+        for(int i=0;i<n;i++){
+            System.out.println("Waiting time for P"+(i+1)+" "+burst[i]);
         }
-        System.out.println("avarage waiting time "+ total/(burst.length));
     }
 }
